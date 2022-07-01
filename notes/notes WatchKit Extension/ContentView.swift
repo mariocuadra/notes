@@ -9,7 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hola , Emilia")
+        var note = Note(title: "Una nota", creationDate: "14/06/2022")
+        
+        Text("\(note.title) -       \(note.creationDate)")
             .padding()
     }
 }

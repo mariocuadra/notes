@@ -20,6 +20,8 @@
 		418D7AF3286B110700E0756A /* notesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D7AF2286B110700E0756A /* notesTests.swift */; };
 		418D7AFD286B110700E0756A /* notesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D7AFC286B110700E0756A /* notesUITests.swift */; };
 		418D7AFF286B110700E0756A /* notesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418D7AFE286B110700E0756A /* notesUITestsLaunchTests.swift */; };
+		41C6346F286E57CC001F927E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C6346E286E57CC001F927E /* Note.swift */; };
+		41C63471286F2838001F927E /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C63470286F2838001F927E /* AddNote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		418D7AF8286B110700E0756A /* notesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = notesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		418D7AFC286B110700E0756A /* notesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notesUITests.swift; sourceTree = "<group>"; };
 		418D7AFE286B110700E0756A /* notesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = notesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		41C6346E286E57CC001F927E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		41C63470286F2838001F927E /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 		418D7ABE286B110500E0756A = {
 			isa = PBXGroup;
 			children = (
+				41C63470286F2838001F927E /* AddNote.swift */,
+				41C6346E286E57CC001F927E /* Note.swift */,
 				418D7ACD286B110500E0756A /* notes WatchKit App */,
 				418D7AD8286B110700E0756A /* notes WatchKit Extension */,
 				418D7AF1286B110700E0756A /* notesTests */,
@@ -383,11 +389,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41C63471286F2838001F927E /* AddNote.swift in Sources */,
 				418D7ADE286B110700E0756A /* NotificationController.swift in Sources */,
 				418D7ADC286B110700E0756A /* ContentView.swift in Sources */,
 				418D7AE2286B110700E0756A /* ComplicationController.swift in Sources */,
 				418D7ADA286B110700E0756A /* notesApp.swift in Sources */,
 				418D7AE0286B110700E0756A /* NotificationView.swift in Sources */,
+				41C6346F286E57CC001F927E /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
