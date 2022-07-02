@@ -8,26 +8,28 @@
 import SwiftUI
 
 struct AddNote: View {
-    
+    // arreglo de notas
     @State private var notes = [Note]()
     @State private var textNote = ""
     
     
     var body: some View {
-    
-        TextField("Nota ", text: $textNote)
-        Button("Agregar nota"){
-            
-            guard textNote.isEmpty==false            else
-            {
-                return
+        VStack{
+            TextField("Nota ", text: $textNote)
+            Button("Agregar nota"){
+                // si el ingreso es vacio que no continue
+                guard textNote.isEmpty==false            else
+                {
+                    return
+                }
+                // guarda las notas en un arreglo
+                let note = Note(title: textNote)
+                // agrega la nota
+                notes.append(note)
+                // se limpia la propiedad de textnote.
+                textNote = ""
             }
-            
-            let note = Note(title: textNote, creationDate: "01/07/2022")
-            notes.append(note)
-            textNote = ""
         }
-        
     }
 }
 
