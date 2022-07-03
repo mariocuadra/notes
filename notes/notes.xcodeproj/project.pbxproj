@@ -23,6 +23,7 @@
 		41C6346F286E57CC001F927E /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C6346E286E57CC001F927E /* Note.swift */; };
 		41C63471286F2838001F927E /* AddNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C63470286F2838001F927E /* AddNote.swift */; };
 		41C634732870756B001F927E /* ListNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C634722870756B001F927E /* ListNotes.swift */; };
+		41C6347528710DCE001F927E /* DetailNotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C6347428710DCE001F927E /* DetailNotes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		41C6346E286E57CC001F927E /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		41C63470286F2838001F927E /* AddNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNote.swift; sourceTree = "<group>"; };
 		41C634722870756B001F927E /* ListNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNotes.swift; sourceTree = "<group>"; };
+		41C6347428710DCE001F927E /* DetailNotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNotes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 		418D7ABE286B110500E0756A = {
 			isa = PBXGroup;
 			children = (
+				41C6347428710DCE001F927E /* DetailNotes.swift */,
 				41C634722870756B001F927E /* ListNotes.swift */,
 				41C63470286F2838001F927E /* AddNote.swift */,
 				41C6346E286E57CC001F927E /* Note.swift */,
@@ -393,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41C63471286F2838001F927E /* AddNote.swift in Sources */,
+				41C6347528710DCE001F927E /* DetailNotes.swift in Sources */,
 				418D7ADE286B110700E0756A /* NotificationController.swift in Sources */,
 				418D7ADC286B110700E0756A /* ContentView.swift in Sources */,
 				418D7AE2286B110700E0756A /* ComplicationController.swift in Sources */,

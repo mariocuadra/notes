@@ -9,10 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        var note = Note(title: "Una nota")
-        
-        Text("\(note.title)")
-            .padding()
+        VStack{
+           NavigationLink("Agrega nota",destination: AddNote())
+           NavigationLink("Listar nota", destination: ListNotes())
+        }
     }
 }
 

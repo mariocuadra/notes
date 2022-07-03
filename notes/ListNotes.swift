@@ -9,20 +9,29 @@ import SwiftUI
 
 struct ListNotes: View {
  
-    var notes: [Note] = [Note(title: "Uno"),
-                         Note(title: "Dos"),
-                         Note(title: "Tres")]
+    @State private var notes: [Note] = [Note(title: "Uno"),
+                                        Note(title: "Dos"),
+                                        Note(title: "Tres")]
+                        
     
     var body: some View {
         
         List{
-            ForEach(0..<notes.count, id:\.self){
-                
-                i in Text("\(notes[i].title) - \(notes[i].creationDate)")
+            ForEach(0..<notes.count, id: \.self){ i in
+               NavigationLink(
+                destination:DetailNotes(note: notes[i]),
+                label:{
+                    Text(notes[i].title)
                     .lineLimit(1)
-            
+                })
             }
-
+            .onDelete(perform: delete)
+        }
+    }
+    
+    func delete(offsets:IndexSet){
+        withAnimation{
+            notes.remove(atOffsets: offsets)
         }
     }
 }
