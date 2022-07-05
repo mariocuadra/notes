@@ -26,6 +26,8 @@ struct AddNote: View {
                 let note = Note(title: textNote)
                 // agrega la nota
                 notes.append(note)
+                //guarda el arreglo en singleton 
+                Tools.shared.save(array: notes)
                 // se limpia la propiedad de textnote.
                 textNote = ""
             }
