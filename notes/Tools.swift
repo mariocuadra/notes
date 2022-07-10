@@ -28,7 +28,7 @@ class Tools{
     {
         guard let savedData = UserDefaults.standard.array(forKey: keyNote) as? [Data] else{
             return []
-        }
+    }
         
                 // decodifica y realiza el ingreso
         return savedData.map{try! JSONDecoder().decode(Note.self, from: $0)}

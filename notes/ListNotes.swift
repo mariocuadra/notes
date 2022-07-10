@@ -9,30 +9,39 @@ import SwiftUI
 
 struct ListNotes: View {
  
-    @State private var notes: [Note] = [Note(title: "Uno"),
-                                        Note(title: "Dos"),
-                                        Note(title: "Tres")]
-                        
+    @State private var notes = [Note]()
     
     var body: some View {
         
-        List{
-            ForEach(0..<notes.count, id: \.self){ i in
-               NavigationLink(
-                destination:DetailNotes(note: notes[i]),
-                label:{
-                    Text(notes[i].title)
-                    .lineLimit(1)
-                })
+        VStack{
+            Text("Notas \(notes.count)")
+            List{
+                ForEach(0..<notes.count, id: \.self){ i in
+                   NavigationLink(
+                    destination:DetailNotes(note: notes[i],speech: TextSpeech.init(isText: "")),
+                    label:{
+                        Text(notes[i].title)
+                        .lineLimit(1)
+                    })
+                }
+                .onDelete(perform: delete)
+                
             }
-            .onDelete(perform: delete)
         }
+        .onAppear(perform: {
+            notes = Tools.shared.load()
+        })
     }
     
     func delete(offsets:IndexSet){
         withAnimation{
+            //Borrar en la pantalla
             notes.remove(atOffsets: offsets)
         }
+        
+            //Borrar en el arreglo
+            Tools.shared.save(array: notes)
+        
     }
 }
 

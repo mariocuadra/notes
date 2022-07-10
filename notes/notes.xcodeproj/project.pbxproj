@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4188FC9E2872379400896EAB /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4188FC9D2872379400896EAB /* Tools.swift */; };
+		4188FCA028779AB400896EAB /* TextSpeech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4188FC9F28779AB400896EAB /* TextSpeech.swift */; };
 		418D7ACA286B110500E0756A /* notes WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 418D7AC9286B110500E0756A /* notes WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		418D7ACF286B110700E0756A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 418D7ACE286B110700E0756A /* Assets.xcassets */; };
 		418D7AD5286B110700E0756A /* notes WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 418D7AD4286B110700E0756A /* notes WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -85,6 +86,7 @@
 
 /* Begin PBXFileReference section */
 		4188FC9D2872379400896EAB /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		4188FC9F28779AB400896EAB /* TextSpeech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSpeech.swift; sourceTree = "<group>"; };
 		418D7AC5286B110500E0756A /* notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		418D7AC9286B110500E0756A /* notes WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "notes WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		418D7ACE286B110700E0756A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 		418D7ABE286B110500E0756A = {
 			isa = PBXGroup;
 			children = (
+				4188FC9F28779AB400896EAB /* TextSpeech.swift */,
 				4188FC9D2872379400896EAB /* Tools.swift */,
 				41C6347428710DCE001F927E /* DetailNotes.swift */,
 				41C634722870756B001F927E /* ListNotes.swift */,
@@ -400,6 +403,7 @@
 			files = (
 				41C63471286F2838001F927E /* AddNote.swift in Sources */,
 				41C6347528710DCE001F927E /* DetailNotes.swift in Sources */,
+				4188FCA028779AB400896EAB /* TextSpeech.swift in Sources */,
 				418D7ADE286B110700E0756A /* NotificationController.swift in Sources */,
 				418D7ADC286B110700E0756A /* ContentView.swift in Sources */,
 				418D7AE2286B110700E0756A /* ComplicationController.swift in Sources */,

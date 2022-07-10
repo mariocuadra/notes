@@ -11,7 +11,7 @@ struct AddNote: View {
     // arreglo de notas
     @State private var notes = [Note]()
     @State private var textNote = ""
-    
+    @Environment(\.presentationMode) var presentation
     
     var body: some View {
         VStack{
@@ -30,8 +30,13 @@ struct AddNote: View {
                 Tools.shared.save(array: notes)
                 // se limpia la propiedad de textnote.
                 textNote = ""
+                //la vista desaparece cuando le da agregar al boton
+                presentation.wrappedValue.dismiss()
             }
         }
+        .onAppear(perform: {
+            notes = Tools.shared.load()
+        })
     }
 }
 
